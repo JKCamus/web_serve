@@ -1,27 +1,64 @@
 <template>
-    <div id="app">
-        <img alt="Vue logo" src="./assets/logo.png" />
-        <Parent ></Parent>
-    </div>
+  <div id="app">
+    <img alt="Vue logo" src="./assets/logo.png" />
+    <Parent :age="18" name="camus" @changeMydata="changeMydata" :myData="myData"></Parent>
+    <label>动态组件属性透传</label>
+
+    <showComponents :configJsonArr="configJsonArr"></showComponents>
+  </div>
 </template>
 
 <script>
 import Parent from "./components/$attrs_test/Parent";
+import showComponents from "./components/is-components/showComponents";
 export default {
-    name: "App",
-    components: {
-        Parent,
+  name: "App",
+  components: {
+    Parent,
+    showComponents,
+  },
+  data() {
+    return {
+      configJsonArr: [
+        {
+          type: "Input",
+          props: {
+            placeholder: "我是默认值",
+            clearable: true,
+          },
+        },
+        {
+          type: "Select",
+          props: {
+            placeholder: "我是默认值",
+          },
+        },
+        {
+          type: "Input",
+          props: {
+            placeholder: "我是默认值",
+            suffixIcon: "el-icon-delete",
+          },
+        },
+      ],
+      myData: "",
+    };
+  },
+  methods: {
+    changeMydata(val) {
+      console.log("app中val", val);
     },
+  },
 };
 </script>
 
 <style>
 #app {
-    font-family: Avenir, Helvetica, Arial, sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-align: center;
-    color: #2c3e50;
-    margin-top: 60px;
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 60px;
 }
 </style>
