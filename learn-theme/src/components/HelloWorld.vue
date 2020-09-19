@@ -42,7 +42,20 @@ export default {
       window.less.modifyVars({
         "@primary-color": primaryColor,
       });
+      localStorage.setItem("theme_color", primaryColor);
     },
+    initThemeColor(params) {
+      const savedColor = localStorage.getItem("theme_color");
+      if (savedColor) {
+        console.log('savedColor', savedColor)
+        window.less.modifyVars({
+        "@primary-color": savedColor,
+      });
+      }
+    },
+  },
+  created() {
+    this.initThemeColor()
   },
 };
 </script>
@@ -50,13 +63,11 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="less">
 @import "../assets/styles/theme/variables.less";
-h1{
+h1 {
   color: @primary-3;
-
 }
 h3 {
   margin: 40px 0 0;
-  
 }
 ul {
   list-style-type: none;
