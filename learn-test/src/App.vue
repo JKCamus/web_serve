@@ -5,17 +5,20 @@
     <label>动态组件属性透传</label>
 
     <showComponents :configJsonArr="configJsonArr"></showComponents>
+    <Lodash></Lodash>
   </div>
 </template>
 
 <script>
 import Parent from "./components/$attrs_test/Parent";
 import showComponents from "./components/is-components/showComponents";
+import Lodash from './components/learn_lodash/basic'
 export default {
   name: "App",
   components: {
     Parent,
     showComponents,
+    Lodash
   },
   data() {
     return {
