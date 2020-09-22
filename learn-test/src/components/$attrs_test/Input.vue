@@ -26,7 +26,7 @@ export default {
     console.log("App上的myData", this.myData);
   },
   mounted() {
-    console.log('------', this.myData)
+    // console.log('------', this.myData)
   },
   methods: {
     sonIpnut() {

@@ -5,20 +5,27 @@
     <label>动态组件属性透传</label>
 
     <showComponents :configJsonArr="configJsonArr"></showComponents>
-    <Lodash></Lodash>
+    <!-- <Lodash></Lodash> -->
+    <Eye></Eye>
+    <hr />
+    <webGL></webGL>
   </div>
 </template>
 
 <script>
 import Parent from "./components/$attrs_test/Parent";
 import showComponents from "./components/is-components/showComponents";
-import Lodash from './components/learn_lodash/basic'
+import Lodash from "./components/learn_lodash/basic";
+import Eye from "./components/learnEye";
+import webGL from "./components/webGL";
 export default {
   name: "App",
   components: {
     Parent,
     showComponents,
-    Lodash
+    Lodash,
+    Eye,
+    webGL,
   },
   data() {
     return {
