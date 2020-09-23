@@ -1,11 +1,4 @@
-<!--
- * @Description: 
- * @version: 
- * @Author: camus
- * @Date: 2020-09-21 15:56:06
- * @LastEditors: camus
- * @LastEditTime: 2020-09-23 14:21:05
--->
+
 <template>
   <div class="page1">
       <h1>page1</h1>
@@ -15,13 +8,16 @@
 </template>
 <script>
 import { reactive, toRefs } from "vue";
+import {useStore} from 'vuex'
 
 export default {
   setup() {
+    const store=useStore()
+    const {state:$state}=store
     const state = reactive({
       count: 0,
     });
-
+    console.log('store', $state.count)
     return {
       ...toRefs(state),
     };
