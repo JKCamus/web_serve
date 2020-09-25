@@ -9,10 +9,12 @@
   },
   "dependencies": {
     "ant-design-vue": "^1.6.5",
-    "beam": "^0.1.4",
+    "axios": "^0.20.0",
+    "beam-gl": "^0.1912.0",
     "core-js": "^3.6.5",
     "element-ui": "^2.13.2",
     "lodash": "^4.17.20",
+    "mockjs": "^1.1.0",
     "node-sass": "^4.14.1",
     "sass-loader": "^10.0.2",
     "vue": "^2.6.11"

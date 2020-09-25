@@ -9,6 +9,7 @@
     <Eye></Eye>
     <hr />
     <webGL></webGL>
+    <css></css>
   </div>
 </template>
 
@@ -18,6 +19,7 @@ import showComponents from "./components/is-components/showComponents";
 import Lodash from "./components/learn_lodash/basic";
 import Eye from "./components/learnEye";
 import webGL from "./components/webGL";
+import css from './components/webGL/css'
 export default {
   name: "App",
   components: {
@@ -26,6 +28,7 @@ export default {
     Lodash,
     Eye,
     webGL,
+    css
   },
   data() {
     return {

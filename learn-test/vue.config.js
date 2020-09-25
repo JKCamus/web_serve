@@ -6,12 +6,12 @@ module.exports = {
         assets: "@/assets",
         common: "@/common",
         components: "@/components",
-        network: "@/network",
+        services: "@/services",
         views: "@/views",
         utils: "@/utils"
       }
     }
-  },
+  }
   // 使用代理
   // devServer: {
   //   //! 移动端测试用
@@ -34,24 +34,4 @@ module.exports = {
   //     }
   //   }
   // },
-
-
-  // devServer: {
-  //   // 端口配置
-  //   port: 1888,
-  //   // 反向代理配置
-  //   proxy: {
-  //     '/api': {
-  //       // 对接Atom Boot后台
-  //       // target: 'http://localhost:8686/',
-  //       target: 'http://192.168.46.232:8686',
-  //       // 对接Atom Cloud后台
-  //       //target: 'http://localhost/',
-  //       ws: true,
-  //       pathRewrite: {
-  //         '^/api': '/'
-  //       }
-  //     }
-  //   }
-  // }
 };
