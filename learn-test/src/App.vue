@@ -1,34 +1,24 @@
 <template>
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png" />
-    <Parent :age="18" name="camus" @changeMydata="changeMydata" :myData="myData"></Parent>
-    <label>动态组件属性透传</label>
 
-    <showComponents :configJsonArr="configJsonArr"></showComponents>
-    <!-- <Lodash></Lodash> -->
-    <Eye></Eye>
-    <hr />
-    <webGL></webGL>
-    <css></css>
+    <router-link to="/showComponents">动态组件</router-link>
+    <router-link to="/WebGl">WebGl</router-link>
+    <router-link to="/Lodash">Lodash</router-link>
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
-import Parent from "./components/$attrs_test/Parent";
 import showComponents from "./components/is-components/showComponents";
-import Lodash from "./components/learn_lodash/basic";
 import Eye from "./components/learnEye";
-import webGL from "./components/webGL";
-import css from './components/webGL/css'
+import css from "./components/webGL/css";
 export default {
   name: "App",
   components: {
-    Parent,
     showComponents,
-    Lodash,
     Eye,
-    webGL,
-    css
+    css,
   },
   data() {
     return {

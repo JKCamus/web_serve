@@ -3,7 +3,7 @@ import App from './App.vue'
 import Element from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css';
 import _ from 'lodash';
-
+import router from './router'
 Vue.prototype._=_
 Vue.config.productionTip = false
 Vue.use(Element)
@@ -15,4 +15,5 @@ if (process.env.NODE_ENV === "development") {
 
 new Vue({
   render: h => h(App),
+  router
 }).$mount('#app')
