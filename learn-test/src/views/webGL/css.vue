@@ -42,15 +42,20 @@ main {
 }
 </style>
 <template>
+<div>
+
   <main>
     <div class="progress-outer">
       <!--更好的扩展-->
       <div class="progress-enter">
         <div class="progress-bg" style="width:80%"></div>
+
       </div>
       <span>60%</span>
     </div>
   </main>
+</div>
+
 </template>
 <script>
 </script>

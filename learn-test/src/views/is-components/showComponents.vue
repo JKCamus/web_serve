@@ -1,9 +1,6 @@
 <template>
   <div class="showComponents">
-    我擦
     <div v-for="(config,index) in configJsonArr" :key="config.type+index">
-
-      <!-- <compFormItem :is="config.type" :configProps="config.props"></compFormItem> -->
       <CompFormItem :configJson="config"></CompFormItem>
     </div>
     <!-- <Input></Input>
@@ -13,6 +10,7 @@
 <script>
 import Input from "./input";
 import Select from "./select";
+
 const CompFormItem = {
   components: {
     Input,
@@ -53,6 +51,7 @@ export default {
     return {};
   },
 };
+
 </script>
 <style scoped lang="scss">
 h3 {
@@ -70,3 +69,4 @@ a {
   color: #42b983;
 }
 </style>
+

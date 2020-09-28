@@ -3,7 +3,7 @@ import VueRouter from 'vue-router';
 
 const WebGl=()=>import ('views/webGL')
 const Parent=()=>import ('views/$attrs_test/Parent')
-const showComponents=()=>import('views/is-components/showComponents')
+const dynamicComponent=()=>import('views/is-components')
 const Lodash=()=>import('views/learn_lodash/basic')
 
 // 重写路由replace方法,阻止重复点击报错
@@ -26,8 +26,8 @@ const routes=[
     }
   },
   {
-    path:'/showComponents',
-    component:showComponents,
+    path:'/dynamicComponent',
+    component:dynamicComponent,
     meta:{
       title:"动态组件"
     }
