@@ -1,9 +1,8 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png" />
+    <!-- <img alt="Vue logo" src="./assets/logo.png" /> -->
     <nav id="nav-1">
       <router-link class="link-1" to="/home">穿透</router-link>
-
       <router-link class="link-1" to="/dynamicComponent">动态组件</router-link>
       <router-link class="link-1" to="/WebGl">WebGl</router-link>
       <router-link class="link-1" to="/Lodash">Lodash</router-link>
