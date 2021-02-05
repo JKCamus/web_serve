@@ -7,7 +7,7 @@ export function request(config) {
   // 1创建实例
 
   const instance = axios.create({
-    baseURL: MOCK_SERVER,
+    baseURL: BASE_URL,
     // baseURL: "api/",
     timeout: TIMEOUT
   });

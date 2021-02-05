@@ -12,6 +12,8 @@
     "axios": "^0.20.0",
     "beam-gl": "^0.1912.0",
     "core-js": "^3.6.5",
+    "echarts": "^5.0.1",
+    "element-resize-detector": "^1.2.1",
     "element-ui": "^2.13.2",
     "lodash": "^4.17.20",
     "mockjs": "^1.1.0",

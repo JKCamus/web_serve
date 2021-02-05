@@ -5,6 +5,8 @@ const WebGl=()=>import ('views/webGL')
 const Parent=()=>import ('views/$attrs_test/Parent')
 const dynamicComponent=()=>import('views/is-components')
 const Lodash=()=>import('views/learn_lodash/basic')
+const Charts=()=>import('views/echart/line')
+const RequestTest=()=>import('views/RequestTest/request-test')
 
 // 重写路由replace方法,阻止重复点击报错
 const originalReplace = VueRouter.prototype.replace;
@@ -45,7 +47,21 @@ const routes=[
     meta:{
       title:"Lodash"
     }
-  }
+  },
+  {
+    path:'/charts',
+    component:Charts,
+    meta:{
+      title:"chart"
+    }
+  },
+  {
+    path:'/request-test',
+    component:RequestTest,
+    meta:{
+      title:"request-test"
+    }
+  },
 ]
 const router=new VueRouter({
   routes,

@@ -1,16 +1,5 @@
 import { request } from "./request";
 
-// export function getSearchList(searchVal = "") {
-//   return request({
-//     url: "/disease/queryAppDisease",
-//     params: {
-//       // gender: gender,
-//       searchVal: searchVal,
-//       page: 1,
-//       size: 500
-//     }
-//   });
-// }
 
 export function getUserName() {
   return request({
@@ -26,3 +15,13 @@ export function getNoticeList(params = {}) {
   })
 }
 
+export function getPhotoList(page, size) {
+  return request({
+    // /photo/getPhotos?page=1&&size=12
+    url: "/photo/getPhotos",
+    params: {
+      page,
+      size,
+    },
+  });
+}

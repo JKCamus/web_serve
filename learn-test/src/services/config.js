@@ -1,6 +1,7 @@
 // const devBaseURL = "http://192.168.46.232:8686";
-const devBaseURL =
-  " https://www.easy-mock.com/mock/5f6aab1408d0e90f8b2abf78/test";
+// const devBaseURL =
+//   " https://www.easy-mock.com/mock/5f6aab1408d0e90f8b2abf78/test";
+const devBaseURL = "http://47.102.211.145:8086";
 
 const proBaseURL =
   "https://www.easy-mock.com/mock/5f6aab1408d0e90f8b2abf78/test";

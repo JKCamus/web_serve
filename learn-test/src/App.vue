@@ -6,20 +6,17 @@
       <router-link class="link-1" to="/dynamicComponent">动态组件</router-link>
       <router-link class="link-1" to="/WebGl">WebGl</router-link>
       <router-link class="link-1" to="/Lodash">Lodash</router-link>
+      <router-link class="link-1" to="/charts">Charts</router-link>
+      <router-link class="link-1" to="/request-test">request-test</router-link>
     </nav>
     <router-view></router-view>
   </div>
 </template>
 
 <script>
-import Eye from "./components/learnEye";
-import css from "./components/webGL/css";
 export default {
   name: "App",
-  components: {
-    Eye,
-    css,
-  },
+  components: {},
   data() {
     return {
       configJsonArr: [
@@ -55,7 +52,7 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" >
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
