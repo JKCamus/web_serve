@@ -8,6 +8,7 @@
       <router-link class="link-1" to="/Lodash">Lodash</router-link>
       <router-link class="link-1" to="/charts">Charts</router-link>
       <router-link class="link-1" to="/request-test">request-test</router-link>
+      <router-link class="link-1" to="/test-proxy">test-proxy</router-link>
     </nav>
     <router-view></router-view>
   </div>
@@ -59,13 +60,13 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  /* margin-top: 60px; */
   @import url(https://fonts.googleapis.com/css?family=Raleway);
   body {
     margin: 0px;
   }
   nav {
-    margin-top: 40px;
+    /* margin-top: 40px; */
     padding: 24px;
     text-align: center;
     font-family: Raleway;

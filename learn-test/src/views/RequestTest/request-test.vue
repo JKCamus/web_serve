@@ -4,7 +4,7 @@
  * @Author: camus
  * @Date: 2021-02-05 11:00:02
  * @LastEditors: camus
- * @LastEditTime: 2021-02-05 13:54:08
+ * @LastEditTime: 2021-02-20 14:03:18
 -->
 <template>
   <div class="request-test">===============</div>
@@ -43,14 +43,14 @@ export default {
       }
       try {
         const promiseArr = this.infoList.map((item) => widthAwait(this.imgPromise(item.url)));
-      const res=  await Promise.all(promiseArr);
+        await Promise.all(promiseArr);
       } catch (error) {
         console.log(error);
       }
     },
   },
   mounted() {
-    this.fetchList();
+    // this.fetchList();
   },
 };
 </script>

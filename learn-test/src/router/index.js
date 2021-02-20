@@ -62,6 +62,13 @@ const routes=[
       title:"request-test"
     }
   },
+  {
+    path:'/test-proxy',
+    component:()=>import('views/proxy-img'),
+    meta:{
+      title:"test-proxy"
+    }
+  },
 ]
 const router=new VueRouter({
   routes,
