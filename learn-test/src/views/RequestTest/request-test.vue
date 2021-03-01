@@ -4,14 +4,20 @@
  * @Author: camus
  * @Date: 2021-02-05 11:00:02
  * @LastEditors: camus
- * @LastEditTime: 2021-02-20 14:03:18
+ * @LastEditTime: 2021-03-01 14:41:09
 -->
 <template>
-  <div class="request-test">===============</div>
+  <div class="request-test">
+    <y-pagination
+      class="pageBox"
+      :total="10"
+    />
+  </div>
 </template>
 
 <script>
 import { getPhotoList } from "services/home";
+// import Title from '@/components/global/y-title'
 export default {
   name: "request-test",
   data() {

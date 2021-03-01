@@ -4,6 +4,9 @@ import Element from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css';
 import _ from 'lodash';
 import router from './router'
+import "@/components/index"
+
+
 Vue.prototype._=_
 Vue.config.productionTip = false
 Vue.use(Element)
